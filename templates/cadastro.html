@@ -1,0 +1,150 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../style.css">
+  </head><body class="background">
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home" id="btHomeHD"><span>QuizPM</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="home" id="btHomeHD">Home</a>
+            </li>
+            <li>
+              <a href="login" id="btLoginHD">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="text-align: right;">
+            <p style="color: #FFF;">A certificação de metodologias que nos auxiliam a lidar com a estrutura
+              atual da organização cumpre um papel essencial na formulação das condições
+              financeiras e administrativas exigidas. Não obstante, a complexidade dos
+              estudos efetuados obstaculiza a apreciação da importância dos procedimentos
+              normalmente adotados. O empenho em analisar a contínua expansão de nossa
+              atividade é uma das consequências do sistema de participação geral. A nível
+              organizacional, o consenso sobre a necessidade de qualificação auxilia
+              a preparação e a composição das posturas dos órgãos dirigentes com relação
+              às suas atribuições. Assim mesmo, o fenômeno da Internet deve passar por
+              modificações independentemente da gestão inovadora da qual fazemos parte.
+              No entanto, não podemos esquecer que o início da atividade geral de formação
+              de atitudes pode nos levar a considerar a reestruturação dos modos de operação
+              convencionais.</p>
+            <br>
+            <div style="color: #fff">
+              <button type="radio" id="rdCondicoesCadastro"></button>&nbsp; Aceito os termos e condições</div>
+          </div>
+          <div class="col-md-6">
+            <form role="form">
+              <div class="form-group">
+                <input class="form-control" id="txtNomeCadastro" placeholder="Nome" type="text">
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="txtEmailCadastro" placeholder="Email" type="email">
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="slctSexoCadastro">
+                  <option>Sexo</option>
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <ul class="list-inline" style="color:#FFF">
+                  <li style="width: 182px;">
+                    <input type="date" class="form-control" placeholder="Data de Nascimento">
+                  </li>
+                  <li>
+                    <div class="btn-group btn-group-lg" id="dpSemIngresso">
+                      <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Sem. de Ingresso <span class="fa fa-caret-down"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>
+                          <a href="#">1</a>
+                        </li>
+                        <li>
+                          <a href="#">2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="btn-group btn-group-lg" id="dpAnoIngresso">
+                      <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Ano de Ingresso <span class="fa fa-caret-down"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>
+                          <a href="#">2016</a>
+                        </li>
+                        <li>
+                          <a href="#">2015</a>
+                        </li>
+                        <li>
+                          <a href="#">2014</a>
+                        </li>
+                        <li>
+                          <a href="#">2013</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-group" id="txtSenhaCadastro">
+                <input class="form-control" type="password" placeholder="Senha">
+              </div>
+              <div class="form-group" id="txtReSenhaCadastro">
+                <input class="form-control" type="password" placeholder="Repetir Senha">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4" style="text-align: center;">
+            <button type="submit" class="btn btn-default btn-lg" id="btCadastrar">Cadastrar</button>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="section text-center" style="color: #FFFFFF;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">Copyright ©
+              <a href="#" style="color: #ffffff">SmashGod</a>&nbsp; 2016</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
