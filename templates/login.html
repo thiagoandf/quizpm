@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="background">
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home" id="btHomeHD"><span>QuizPM</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="home" id="btHomeHD">Home</a>
+                </li>
+                <li class="active">
+                    <a href="login" id="btLoginHD">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form role="form" class="text-center">
+                    <!--
+                    <div class="form-group">
+                        <input class="form-control input-lg" id="txtEmailLogin" placeholder="Email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control input-lg" id="txtEmailSenha" placeholder="Senha" type="password">
+                    </div>
+                    <div>
+                        <div class="col-md-12" id="btLogin">
+                            <a class="btn btn-lg btn-primary"
+                               style="background-color: #272B30; border-type:solid; border-size:2px; border-color: white;">Login</a>
+                        </div>
+                    </div>
+                    -->
+
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">{{ form.user_id(class_="form-control input-lg", placeholder="ID") }}</div>
+                    <div class="form-group">{{ form.password(class_="form-control input-lg", placeholder="Senha") }}</div>
+                    <div class="col-md-12" id="btLogin">{{ form.submit() }}</div>
+
+                </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+<footer class="section text-center" style="color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">Copyright ©
+                    <a href="#" style="color: #ffffff">SmashGod</a>&nbsp; 2016</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
